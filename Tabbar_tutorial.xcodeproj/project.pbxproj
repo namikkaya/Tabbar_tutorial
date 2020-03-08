@@ -15,6 +15,8 @@
 		4D5BB4F02413EE5A00D00E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5BB4EE2413EE5A00D00E6C /* LaunchScreen.storyboard */; };
 		4D5BB4FB2413EE5A00D00E6C /* Tabbar_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BB4FA2413EE5A00D00E6C /* Tabbar_tutorialTests.swift */; };
 		4D5BB5062413EE5B00D00E6C /* Tabbar_tutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BB5052413EE5B00D00E6C /* Tabbar_tutorialUITests.swift */; };
+		4D5BB5152413F4DA00D00E6C /* IGTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BB5142413F4DA00D00E6C /* IGTabBar.swift */; };
+		4D5BB51724141D2900D00E6C /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BB51624141D2900D00E6C /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4D5BB5012413EE5B00D00E6C /* Tabbar_tutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tabbar_tutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5BB5052413EE5B00D00E6C /* Tabbar_tutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar_tutorialUITests.swift; sourceTree = "<group>"; };
 		4D5BB5072413EE5B00D00E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5BB5142413F4DA00D00E6C /* IGTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTabBar.swift; sourceTree = "<group>"; };
+		4D5BB51624141D2900D00E6C /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		4D5BB4E22413EE5700D00E6C /* Tabbar_tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				4D5BB5132413F45200D00E6C /* IGTabBarGroup */,
 				4D5BB4E32413EE5700D00E6C /* AppDelegate.swift */,
 				4D5BB4E52413EE5700D00E6C /* SceneDelegate.swift */,
 				4D5BB4E72413EE5700D00E6C /* ViewController.swift */,
+				4D5BB51624141D2900D00E6C /* testViewController.swift */,
 				4D5BB4E92413EE5700D00E6C /* Main.storyboard */,
 				4D5BB4EC2413EE5A00D00E6C /* Assets.xcassets */,
 				4D5BB4EE2413EE5A00D00E6C /* LaunchScreen.storyboard */,
@@ -126,6 +132,22 @@
 				4D5BB5072413EE5B00D00E6C /* Info.plist */,
 			);
 			path = Tabbar_tutorialUITests;
+			sourceTree = "<group>";
+		};
+		4D5BB5132413F45200D00E6C /* IGTabBarGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4D5BB5182415445D00D00E6C /* IGTabBarView */,
+				4D5BB5142413F4DA00D00E6C /* IGTabBar.swift */,
+			);
+			path = IGTabBarGroup;
+			sourceTree = "<group>";
+		};
+		4D5BB5182415445D00D00E6C /* IGTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IGTabBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5BB4E82413EE5700D00E6C /* ViewController.swift in Sources */,
+				4D5BB5152413F4DA00D00E6C /* IGTabBar.swift in Sources */,
 				4D5BB4E42413EE5700D00E6C /* AppDelegate.swift in Sources */,
+				4D5BB51724141D2900D00E6C /* testViewController.swift in Sources */,
 				4D5BB4E62413EE5700D00E6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tabbar_tutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tabbar_tutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
